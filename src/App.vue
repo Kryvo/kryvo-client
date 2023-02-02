@@ -1,8 +1,11 @@
-<script setup lang="ts">
-</script>
-
 <template>
+  <NavigationComponent />
+
+  <div class="container">
+    <router-view></router-view>
+  </div>
 </template>
 
-<style scoped lang="scss">
-</style>
+<script setup lang="ts">
+import NavigationComponent from './components/NavigationComponent.vue'
+</script>
