@@ -1,11 +1,9 @@
 <template>
   <div id="trending" class="view">
-    <h1>TrendingView</h1>
+    <h1>{{ name }}</h1>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'TrendingView'
-}
+<script setup lang="ts">
+const name: string = 'TrendingView'
 </script>

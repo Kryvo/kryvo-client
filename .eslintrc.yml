@@ -2,17 +2,18 @@ env:
   browser: true
   es2021: true
 extends:
-  - plugin:vue/vue3-essential
-  - standard-with-typescript
+  - "plugin:vue/vue3-essential"
+  - "standard-with-typescript"
+  - "@vue/eslint-config-typescript"
 overrides:
   - files: ["src/**/*.{ts,tsx,vue}"]
 ignorePatterns:
-  - vite.config.ts
-  - /src/vite-env.d.ts
+  - "vite.config.ts"
+  - "/src/vite-env.d.ts"
 parserOptions:
-  ecmaVersion: latest
-  sourceType: module
-  project: ./tsconfig.json
+  ecmaVersion: "latest"
+  sourceType: "module"
+  project: "./tsconfig.json"
 plugins:
-  - vue
+  - "vue"
 rules: {}

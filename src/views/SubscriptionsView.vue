@@ -1,11 +1,11 @@
 <template>
   <div id="subscriptions" class="view">
-    <h1>{{ $route.params.id }}</h1>
+    <h1>{{ name }}</h1>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'SubscriptionsView'
-}
+<script setup lang="ts">
+import { useRoute, type RouteLocationNormalizedLoaded } from 'vue-router'
+
+const name: RouteLocationNormalizedLoaded = useRoute()
 </script>
