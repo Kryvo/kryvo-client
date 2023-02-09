@@ -1,11 +1,8 @@
 <template>
-  <NavigationComponent />
-
-  <div class="container">
-    <router-view></router-view>
-  </div>
+  <header-component />
+  <router-view />
 </template>
 
 <script setup lang="ts">
-import NavigationComponent from './components/NavigationComponent.vue'
+import HeaderComponent from './components/HeaderComponent.vue'
 </script>
